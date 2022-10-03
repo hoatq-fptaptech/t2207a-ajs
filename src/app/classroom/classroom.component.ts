@@ -8,6 +8,8 @@ export class ClassroomComponent {
     className = 'T2207A - SEM 1';
     siso = 27;
 
+    schoolName = 'FPT Academy International';
+
     themSinhVien(){
        this.siso++;
     }
