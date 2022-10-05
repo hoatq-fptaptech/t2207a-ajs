@@ -1,21 +1,19 @@
 <header class="section header">
    <div class="container">
-     Header
+
    </div>
 </header>
 <nav class="section navigation">
   <div class="container">
-    <classroom></classroom>
-    <app-student [classN]="'ABC'"></app-student>
+     <a routerLink="/" class="btn btn-primary m-2">Login</a>
+     <a routerLink="/register" class="btn btn-warning">Register</a>
+     <a routerLink="/weather" class="btn btn-warning m-2">Thời tiết</a>
   </div>
 </nav>
 <section class="section main">
   <div class="container">
     <div class="row">
-      <div class="col bg-danger">AAAA</div>
-      <div class="col bg-primary">BBB</div>
-      <div class="col bg-warning">CCCC</div>
-      <div class="col bg-info">DDD</div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </section>

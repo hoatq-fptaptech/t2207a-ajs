@@ -2,7 +2,8 @@ import {Component} from "@angular/core";
 
 @Component({
   selector: 'classroom',
-  templateUrl: './classroom.component.html'
+  templateUrl: './classroom.component.html',
+  styleUrls: ['../../assets/css/classroom.css']
 })
 export class ClassroomComponent {
     className = 'T2207A - SEM 1';
