@@ -9,17 +9,19 @@ import {RegisterComponent} from "./register/register.component";
 import {RouterModule, Routes} from "@angular/router";
 import {WeatherComponent} from "./weather/weather.component";
 import {HttpClientModule} from "@angular/common/http";
+import {MenuComponent} from "./menu/menu.component";
 
 const appRoutes: Routes = [
   {path:'',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'weather',component:WeatherComponent},
+  {path:'menu',component:MenuComponent},
 ];
 @NgModule({
   declarations: [
     AppComponent,ClassroomComponent,StudentComponent,
     LoginComponent,RegisterComponent,
-    WeatherComponent
+    WeatherComponent,MenuComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes),
